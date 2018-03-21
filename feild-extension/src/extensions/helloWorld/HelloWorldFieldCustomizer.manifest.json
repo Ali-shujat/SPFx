@@ -1,0 +1,13 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx/client-side-extension-manifest.schema.json",
+
+  "id": "1b6bfd1c-fb82-46e5-b8c5-3b514a7aee6d",
+  "alias": "HelloWorldFieldCustomizer",
+  "componentType": "Extension",
+  "extensionType": "FieldCustomizer",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false
+}
