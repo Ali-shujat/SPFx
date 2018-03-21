@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>My Porfolio </title>
+  <!-- <meta charset="utf-8"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!-- <link href="custom.css" rel="stylesheet">  -->
+  <link href="home.css" rel="stylesheet">
+  <!-- <link href="animation.css" rel="stylesheet"> -->
+  <!-- Add font library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Pacifico|Arima+Madurai|Roboto');
+  </style>
+
+</head>
+
+<body   >
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-inverse"  style="font-family: 'Chicle', cursive; font-size:1.5em;">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="home.html">Me</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="home.html">WHO</a>
+          </li>
+          <li>
+            <a href="what.html">WHAT</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- First Container -->
+  <div class="container-fluid bg-1 text-center">
+    <h3 class="margin" style="font-family: 'Chicle', cursive;">Who Am I?</h3>
+    <img src="Images\shujat.jpeg" class="img-responsive img-circle margin" style="display:inline" alt="Shujat" width="350" height="350">
+    <h3 style="font-family: 'Chicle', cursive;">I'm an adventurer</h3>
+  </div>
+
+  <!-- Second Container -->
+  <div class="container-fluid bg-2 text-center">
+
+    <div id="about">
+      <div class="row">
+        <!-- Random Quotes -->
+        <div class="col-lg-6">
+          <div id="mainbox" style="padding-left:0px;padding-right:0px;height:auto;">
+            <!--main container-->
+            <div class="container quote_box rows">
+              <!-- content -->
+              <div class="rows">
+                <i class="fa fa-quote-left fa-3x"></i>
+                <div id="quote" class="text-center">
+                  Design is the contrast of the core of limitations therefore there are no boundaries. It is simply an interpretation of creativity.
+                </div>
+                <br/>
+                <div id="author" class="text-right">
+                  - Jenaiha Woods</div>
+              </div>
+              <!--end of content ====================-->
+              <!--buttons-->
+              <div class="rows">
+                <div class="text-left">
+                  <a class="btn btn-lg btn-social-icon btn-twitter" id="social-btn-twitter">
+                    <span class="fa fa-twitter fa-3x"></span>
+                  </a>
+                </div>
+                <div class="text-right">
+                  <a class="btn btn-lg" id="get-another-quote-button">
+                    <span class="fa fa-refresh fa-spin fa-3x"></span>
+                  </a>
+                </div>
+              </div>
+              <!--end of buttons===============================-->
+            </div>
+            <!--end of main container =======================-->
+          </div>
+        </div>
+        <!-- weather part -->
+         <div class="col-lg-6">
+              <div  style="color:rgb(245, 240, 240);font-size:2.5rem">
+                <div id="ipinfo" ></div>
+                <div id="lonLat" ></div>
+                <div id="plats" ></div>
+                <div id="land" ></div>
+                <div id="internetProvider"></div>
+              </div>
+              <!--<div id="main">
+                <div id="today">
+                    <div id="location"></div>
+                    <br/>
+                     <div id="weather">
+                        <i id="todaysIcon" class="wi"></i>
+                        <br/>
+                        <span id="type"></span>
+                        <div id="temp">
+                            <span id="degree"></span>
+                            <span id="unit"></span>
+                        </div>
+                    </div>
+                </div>
+                <ul id="fiveday">
+                    <li class="forecast" id="day1"></li>
+                    <li class="forecast" id="day2"></li>
+                    <li class="forecast" id="day3"></li>
+                    <li class="forecast" id="day4"></li>
+                    <li class="forecast" id="day5"></li>
+                </ul>
+              </div>
+            </div> -->
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Third Container (Grid) -->
+  <div class="container-fluid bg-3" >
+
+    <div class="container" >
+        <!-- style=" font-family: 'Pacifico', cursive;" -->
+      <ul class="nav nav-tabs ">
+        <li class="active">
+          <a data-toggle="tab" href="#menu00" ><h3 style="font-family: 'Chicle', cursive;">Exchange Rates App</h3></a>
+        </li>
+        <li>
+          <a data-toggle="tab" href="#menu01" style="font-family: 'Chicle', cursive;"><h3>Weather App</h3></a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="menu00" class="tab-pane fade in active"> 
+            
+          <div class="col-lg-6">
+            <!-- Exchange Rates App -->
+            <div class="col-lg-6" id="currecyEx">
+              <form class="form-inline" style="padding:5px 5px">
+                <div class="row">
+                  <div class="input-group" style=" font-weight:bolder;border:2px solid #727272;border-radius:6px;">
+                    <span class="input-group-addon">SEK</span>
+                    <input type="text" class="form-control" id="curr_number" placeholder="Swedish krona">
+                    <span class="input-group-btn">
+                      <button id="rsButton" class="btn btn-primary" type="button" style="font-weight:bolder;border:2px">Convert</button>
+                    </span>
+                  </div>
+                </div>
+                <!-- <img src="Images/swedicon.png" alt="sweimg" style="width:15%" /> -->
+              </form>
+
+              <table class="table" style="text-align:left">
+                <!-- <tr>
+                        <th>Country</th>
+                        <th>Currency Rates</th>
+                      </tr> -->
+                <tr>
+                  <td>
+                    <img src="Images/Pakistan-icon.png" alt="" style="width:25%;" /> PKR
+                  </td>
+                  <td class="pkrSek"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="Images/Canada-icon.png" alt="" style="width:25%;" /> CAN $
+                  </td>
+                  <td class="canSek"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="Images/United-States-icon.png" alt="" style="width:25%;" /> US $
+                  </td>
+                  <td class="usaSek"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="Images/Norway-icon.png" alt="" style="width:25%;" /> NEK
+                  </td>
+                  <td class="norSek"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="Images/Denmark-icon.png" alt="" style="width:25%;" /> DKK
+                  </td>
+                  <td class="denSek"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="Images/England-icon.png" alt="" style="width:25%;" /> GBP £
+                  </td>
+                  <td class="engSek"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <p class=" col-lg-6 p-2 text-justify" style="color:black;font-size: 1.5em;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+              <br>
+               Currency Exchage app will help us to find the current currency rates in Sweden. To convert currecy with other country, user can  click the convert button.
+              The user will see the currency rates of five countries.<br>
+            Med hjälp av fixers API, jag hämta valutakurser http://fixer.io. HTML, CSS and javascript is used to develop the app</p>
+        </div>
+        <div id="menu01" class="tab-pane fade">
+          <!-- weathe App -->
+          <div class="col-lg-4 text-justify" style="font-size: 1.5em; color:black;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+              <br>  
+            This weather app shows the current weather in a current location. To see in different unit, then the user can just click the unit in fahrenheit or in celcius. When the weather change, for example its rainy or cloudy then the background changes also that shows the current weather condition. 
+              The user can also see the temparature 5 days in advance.
+              This app is build using JQuery, Ajax and JSON with. The temperature, location and information is being fetch from a specified API/Json file.
+            </div>
+          <div class="col-lg-8">
+            <div class="weatherbox">
+              <div class="row">
+                <div class="col-md-4 col-xs-12 text-left">
+                  <div id="temp">
+                    <span id="degree"></span>
+                    <span id="unit"></span>
+                  </div>
+                </div>
+                <div class="col-md-8 col-xs-12 text-right">
+                  <span class="day text-uppercase"></span>
+                  <span class="date"></span>
+                  <span class="condition text-uppercase"></span>
+                </div>
+              </div>
+              <span style="color: white; display: inline">
+                <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
+              </span>
+              <h3 class="city text-uppercase"></h3>
+              <hr/>
+              <section class="additional-info">
+                <div class="row">
+                  <div class="col-md-4 text-left">
+                    <span id="sunrise" class="text-uppercase"></span>
+                    <span id="sunset" class="text-uppercase"></span>
+                  </div>
+                  <div class="col-md-4 text-left">
+                    <span id="humidity" class="text-uppercase"></span>
+                    <span id="pressure" class="text-uppercase"></span>
+                  </div>
+                  <div class="col-md-4 text-left">
+                    <span id="wind" class="text-uppercase"></span>
+                    <span id="wind-direction" class="text-uppercase"></span>
+                  </div>
+                </div>
+              </section>
+              <hr/>
+              <ul id="fiveday">
+                <li class="forecast" id="day1"></li>
+                <li class="forecast" id="day2"></li>
+                <li class="forecast" id="day3"></li>
+                <li class="forecast" id="day4"></li>
+                <li class="forecast" id="day5"></li>
+              </ul>
+              <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title text-uppercase ">Next Five Days</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <canvas id="myChart" width="300" height="150"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+
+  <footer >
+    <div class="container-fluid bg-2 text-center">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="home.html">ME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="what.html">WHAT</a>
+        </li>
+
+      </ul>
+      <br>
+      <br>
+      <hr>
+      <!--Easily move all flex items to one side, but keep another on the opposite end by mixing justify-content-->
+      <div class="d-flex justify-content-end">
+        <div class="p-2">
+          <span>Stay Connected : </span>
+          <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/shuja4you">
+            <span class="fa fa-twitter"></span>
+          </a>
+          <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/shujata">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <a class="btn btn-social-icon btn-google" href="https://plus.google.com/+ShujatAliplus">
+            <span class="fa fa-google"></span>
+          </a>
+          <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/shujat-ali-5176353b/">
+            <span class="fa fa-linkedin"></span>
+          </a>
+        </div>
+      </div>
+      <p class="mr-auto p-2" style="color:whitesmoke">Copyright &copy; 2018 - All Rights Reserved -
+        <a href="https://www.linkedin.com/in/shujat-ali-5176353b/">Shujat Ali</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- Moment -->
+  <script type="text/javascript" src="scripts/moment-with-locales.min.js"></script>
+  <script type="text/javascript" src="scripts/momentTimeZone.js"></script>
+  <!-- custom JS -->
+  <script type="text/javascript" src="scripts/custom.js"></script>
+  <script type="text/javascript" src="scripts/home.js"></script>
+  <script type="text/javascript" src="scripts/weather.js"></script>
+</body>
+
+</html>
